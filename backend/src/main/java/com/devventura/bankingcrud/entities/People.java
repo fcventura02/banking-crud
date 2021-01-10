@@ -10,7 +10,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
 
 //implements Serializable vai transformar a classe people e uma sequência de bits
 @Entity
@@ -119,6 +118,8 @@ public class People implements Serializable {
 	}
 	
 	
+
+
 	
 	
 }
