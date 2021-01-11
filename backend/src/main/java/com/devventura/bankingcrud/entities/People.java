@@ -26,7 +26,7 @@ public class People implements Serializable {
 	@Column(unique = true)
 	private String email;
 	@NotNull
-	@Column(unique = true, length = 12)
+	@Column(unique = true, length = 11)
 	private String cpf;
 	@NotNull
 	private LocalDate birth;

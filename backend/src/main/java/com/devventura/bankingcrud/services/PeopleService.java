@@ -11,8 +11,6 @@ import com.devventura.bankingcrud.dto.PeopleDTO;
 import com.devventura.bankingcrud.entities.People;
 import com.devventura.bankingcrud.repositories.PeopleRepository;
 
-import ch.qos.logback.classic.Logger;
-
 @Service
 public class PeopleService {
 	@Autowired

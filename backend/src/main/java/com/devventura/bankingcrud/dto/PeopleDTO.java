@@ -3,14 +3,25 @@ package com.devventura.bankingcrud.dto;
 import java.io.Serializable;
 import java.time.LocalDate;
 
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotNull;
+
+import org.hibernate.validator.constraints.br.CPF;
+
 import com.devventura.bankingcrud.entities.People;
 
 public class PeopleDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
 	private Long id;
+	@NotNull
 	private String name;
+	@NotNull
+	@Email(message="Email inválido")
 	private String email;
+	@NotNull
+	@CPF(message="CPF inválido")
 	private String cpf;
+	@NotNull
 	private LocalDate birth;
 	
 	public PeopleDTO() {}
